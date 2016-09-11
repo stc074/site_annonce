@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+
+-->
+<urlrewrite>
+<rule>
+    <from>inscription.html</from>
+    <to>Inscription</to>
+</rule>
+<rule>
+    <from>change-region-([0-9]+).html</from>
+    <to>ChangeRegion?idRegion=$1</to>
+</rule>
+<rule>
+    <from>change-departement-([0-9AB]+).html</from>
+    <to>ChangeDepartement?idDepartement=$1</to>
+</rule>
+<rule>
+    <from>captcha.png</from>
+    <to>Captcha</to>
+</rule>
+<rule>
+    <from>deposer-annonce-1.html</from>
+    <to>DeposerAnnonce1</to>
+</rule>
+<rule>
+    <from>deposer-annonce-2.html</from>
+    <to>DeposerAnnonce2</to>
+</rule>
+<rule>
+    <from>nimdo/edit-categorie.html</from>
+    <to>nimdo/EditCategorie</to>
+</rule>
+<rule>
+    <from>nimdo/edit-sous-categorie.html</from>
+    <to>nimdo/EditSousCategorie</to>
+</rule>
+<rule>
+    <from>nimdo/edit-sous-categorie-([0-9]+).html</from>
+    <to>nimdo/EditSousCategorie?idCategorie=$1</to>
+</rule>
+<rule>
+    <from>deposer-annonce-normale.html</from>
+    <to>DeposerAnnonceNormale</to>
+</rule>
+<rule>
+    <from>deposer-annonce-normale-1-([1-2]).html</from>
+    <to>DeposerAnnonceNormale?mode=$1</to>
+</rule>
+<rule>
+    <from>change-categorie-([0-9]+).html</from>
+    <to>ChangeCategorie?idCategorie=$1</to>
+</rule>
+<rule>
+    <from>deposer-annonce-photos.html</from>
+    <to>DeposerAnnoncePhotos</to>
+</rule>
+<rule>
+    <from>photo-mini-([1-2])-([1-4])-([0-9]+)-([1-5]).(png|gif|jpg|jpeg)</from>
+    <to>DisplayPhoto?mini=$1&amp;type=$2&amp;idAnnonce=$3&amp;index=$4</to>
+</rule>
+<rule>
+    <from>photo-([1-4])-([0-9]+)-([1-5]).(png|gif|jpg|jpeg)</from>
+    <to>DisplayPhoto?type=$1&amp;idAnnonce=$2&amp;index=$3</to>
+</rule>
+<rule>
+    <from>mdp-oublie.html</from>
+    <to>MdpOublie</to>
+</rule>
+<rule>
+    <from>mon-compte.html</from>
+    <to>MonCompte</to>
+</rule>
+<rule>
+    <from>infos-personnelles.html</from>
+    <to>InfosPersonnelles</to>
+</rule>
+<rule>
+    <from>petites-annonces.html</from>
+    <to>PetitesAnnonces?reset=1</to>
+</rule>
+<rule>
+    <from>petites-annonces-1.html</from>
+    <to>PetitesAnnonces</to>
+</rule>
+<rule>
+    <from>petites-annonces-2-([1-2]).html</from>
+    <to>PetitesAnnonces?mode=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-3-([0-9]+).html</from>
+    <to>PetitesAnnonces?idCategorie=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-4-([0-9]+).html</from>
+    <to>PetitesAnnonces?idSousCategorie=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-5-([0-9]+).html</from>
+    <to>PetitesAnnonces?idRegion=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-6-([0-9AB]+).html</from>
+    <to>PetitesAnnonces?idDepartement=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-7-([0-9]+).html</from>
+    <to>PetitesAnnonces?idCommune=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-8-([0-9]+).html</from>
+    <to>PetitesAnnonces?page=$1</to>
+</rule>
+<rule>
+    <from>petite-annonce-([0-9]+)-(.+).html</from>
+    <to>PetiteAnnonce?idAnnonce=$1</to>
+</rule>
+<rule>
+    <from>signaler-abus-([1-4])-([0-9]+).html</from>
+    <to>SignalerAbus?type=$1&amp;idAnnonce=$2</to>
+</rule>
+<rule>
+    <from>nimdo/liste-abus.html</from>
+    <to>nimdo/ListeAbus</to>
+</rule>
+<rule>
+    <from>deposer-annonce-auto.html</from>
+    <to>DeposerAnnonceAuto</to>
+</rule>
+<rule>
+    <from>deposer-annonce-auto-1-([0-2])-([0-9]+).html</from>
+    <to>DeposerAnnonceAuto?mode=$1&amp;typeVehicule=$2</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto.html</from>
+    <to>PetitesAnnoncesAuto?reset=1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-1.html</from>
+    <to>PetitesAnnoncesAuto</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-2-([1-2]).html</from>
+    <to>PetitesAnnoncesAuto?mode=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-3-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?typeVehicule=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-4-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?typeMoto=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-5-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?typeScooter=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-6-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?energie=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-7-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?idRegion=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-8-([0-9AB]+).html</from>
+    <to>PetitesAnnoncesAuto?idDepartement=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-9-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?idCommune=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-auto-10-([0-9]+).html</from>
+    <to>PetitesAnnoncesAuto?page=$1</to>
+</rule>
+<rule>
+    <from>petite-annonce-auto-([0-9]+)-(.+).html</from>
+    <to>PetiteAnnonceAuto?idAnnonce=$1</to>
+</rule>
+<rule>
+    <from>mes-annonces.html</from>
+    <to>MesAnnonces</to>
+</rule>
+<rule>
+    <from>edit-annonce-([1-4])-([0-9]+).html</from>
+    <to>EditAnnonce?type=$1&amp;idAnnonce=$2</to>
+</rule>
+<rule>
+    <from>edit-annonce.html</from>
+    <to>EditAnnonce</to>
+</rule>
+<rule>
+    <from>edit-annonce-photos.html</from>
+    <to>EditAnnoncePhotos</to>
+</rule>
+<rule>
+    <from>deposer-annonce-immo.html</from>
+    <to>DeposerAnnonceImmo</to>
+</rule>
+<rule>
+    <from>deposer-annonce-immo-1-([0-4])-([0-9]+).html</from>
+    <to>DeposerAnnonceImmo?mode=$1&amp;typeBien=$2</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres.html</from>
+    <to>PetitesAnnoncesImmobilieres?reset=1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-1.html</from>
+    <to>PetitesAnnoncesImmobilieres</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-2-([1-4]).html</from>
+    <to>PetitesAnnoncesImmobilieres?mode=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-3-([0-9]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?typeBien=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-4-([0-9]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?typeAppartement=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-5-([1-2]).html</from>
+    <to>PetitesAnnoncesImmobilieres?meuble=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-6-([1-2]).html</from>
+    <to>PetitesAnnoncesImmobilieres?viabilise=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-7-([1-2]).html</from>
+    <to>PetitesAnnoncesImmobilieres?constructible=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-8-([0-9]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?idRegion=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-9-([0-9AB]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?idDepartement=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-10-([0-9]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?idCommune=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-immobilieres-11-([0-9]+).html</from>
+    <to>PetitesAnnoncesImmobilieres?page=$1</to>
+</rule>
+<rule>
+    <from>petite-annonce-immobiliere-([0-9]+)-(.+).html</from>
+    <to>PetiteAnnonceImmobiliere?idAnnonce=$1</to>
+</rule>
+<rule>
+    <from>deposer-annonce-emploi.html</from>
+    <to>DeposerAnnonceEmploi</to>
+</rule>
+<rule>
+    <from>deposer-annonce-emploi-1-([1-2]).html</from>
+    <to>DeposerAnnonceEmploi?mode=$1</to>
+</rule>
+<rule>
+    <from>nimdo/edit-categorie-emploi.html</from>
+    <to>nimdo/EditCategorieEmploi</to>
+</rule>
+<rule>
+    <from>deposer-annonce-emploi-photo.html</from>
+    <to>DeposerAnnonceEmploiPhoto</to>
+</rule>
+<rule>
+    <from>edit-annonce-emploi-photo.html</from>
+    <to>EditAnnonceEmploiPhoto</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi.html</from>
+    <to>PetitesAnnoncesEmploi?reset=1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-1.html</from>
+    <to>PetitesAnnoncesEmploi</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-2-([1-2]).html</from>
+    <to>PetitesAnnoncesEmploi?mode=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-3-([0-9]+).html</from>
+    <to>PetitesAnnoncesEmploi?idCategorie=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-4-([0-9]+).html</from>
+    <to>PetitesAnnoncesEmploi?typeContrat=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-5-([0-9]+).html</from>
+    <to>PetitesAnnoncesEmploi?idRegion=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-6-([0-9AB]+).html</from>
+    <to>PetitesAnnoncesEmploi?idDepartement=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-7-([0-9]+).html</from>
+    <to>PetitesAnnoncesEmploi?idCommune=$1</to>
+</rule>
+<rule>
+    <from>petites-annonces-emploi-8-([0-9]+).html</from>
+    <to>PetitesAnnoncesEmploi?page=$1</to>
+</rule>
+<rule>
+    <from>petite-annonce-emploi-([0-9]+)-(.+).html</from>
+    <to>PetiteAnnonceEmploi?idAnnonce=$1</to>
+</rule>
+<rule>
+    <from>contacter-annonceur-([1-4])-([0-9]+).html</from>
+    <to>ContacterAnnonceur?type=$1&amp;idAnnonce=$2</to>
+</rule>
+<rule>
+    <from>contacter-annonceur.html</from>
+    <to>ContacterAnnonceur</to>
+</rule>
+<rule>
+    <from>messagerie.html</from>
+    <to>Messagerie</to>
+</rule>
+<rule>
+    <from>messages-recus.html</from>
+    <to>MessagesRecus</to>
+</rule>
+<rule>
+    <from>efface-recu-([0-9]+).html</from>
+    <to>MessagesRecus?idDel=$1</to>
+</rule>
+<rule>
+    <from>messages-envoyes.html</from>
+    <to>MessagesEnvoyes</to>
+</rule>
+<rule>
+    <from>efface-envoye-([0-9]+).html</from>
+    <to>MessagesEnvoyes?idDel=$1</to>
+</rule>
+<rule>
+    <from>message-recu-([0-9]+).html</from>
+    <to>MessageRecu?idMessage=$1</to>
+</rule>
+<rule>
+    <from>message-recu.html</from>
+    <to>MessageRecu</to>
+</rule>
+<rule>
+    <from>message-envoye-([0-9]+).html</from>
+    <to>MessageEnvoye?idMessage=$1</to>
+</rule>
+<rule>
+    <from>message-envoye.html</from>
+    <to>MessageEnvoye</to>
+</rule>
+<rule>
+    <from>efface-annonce-([1-4])-([0-9]+).html</from>
+    <to>MesAnnonces?type=$1&amp;idDel=$2</to>
+</rule>
+<rule>
+    <from>supprimer-compte.html</from>
+    <to>SupprimerCompte</to>
+</rule>
+<rule>
+    <from>annonces-categorie-([0-9]+)-(.+).html</from>
+    <to>Categorie1?idCategorie=$1&amp;reset=1</to>
+</rule>
+<rule>
+    <from>annonces-categorie2-([0-9]+)-(.+).html</from>
+    <to>Categorie1?idCategorie=$1</to>
+</rule>
+<rule>
+    <from>annonces-cat-([0-9]+)-([0-9]+)-(.+).html</from>
+    <to>Categorie1?idCategorie=$1&amp;page=$2</to>
+</rule>
+<rule>
+    <from>annonces-sous-categorie-([0-9]+)-([0-9]+)-(.+).html</from>
+    <to>SousCategorie1?idCategorie=$1&amp;idSousCategorie=$2&amp;reset=1</to>
+</rule>
+<rule>
+    <from>annonces-sous-categorie2-([0-9]+)-([0-9]+)-(.+).html</from>
+    <to>SousCategorie1?idCategorie=$1&amp;idSousCategorie=$2</to>
+</rule>
+<rule>
+    <from>annonces-sous-cat-([0-9]+)-([0-9]+)-([0-9]+)-(.+).html</from>
+    <to>SousCategorie1?idCategorie=$1&amp;idSousCategorie=$2&amp;page=$3</to>
+</rule>
+<rule>
+    <from>nimdo/edit-cgus.html</from>
+    <to>nimdo/EditCgus</to>
+</rule>
+<rule>
+    <from>cgus.html</from>
+    <to>Cgus</to>
+</rule>
+<rule>
+    <from>nimdo/abus-([0-9]+).html</from>
+    <to>nimdo/Abus1?idAbus=$1</to>
+</rule>
+<rule>
+    <from>nimdo/ignore-abus-([0-9]+).html</from>
+    <to>nimdo/ListeAbus?idIgnore=$1</to>
+</rule>
+<rule>
+    <from>nimdo/efface-abus-([0-9]+).html</from>
+    <to>nimdo/ListeAbus?idDel=$1</to>
+</rule>
+</urlrewrite>
+
